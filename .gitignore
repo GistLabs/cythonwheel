@@ -5,10 +5,12 @@ __pycache__/
 
 # C extensions
 *.so
+*.c
 
 # Distribution / packaging
 .Python
 build/
+cythonwheel/
 develop-eggs/
 dist/
 downloads/

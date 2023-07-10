@@ -1,0 +1,5 @@
+cython
+wheel
+numpy
+inflect
+setuptools
