@@ -24,4 +24,5 @@ setup(
         compiler_directives={'language_level': 3, "linetrace": False},
     ),
     include_package_data=True,
-    distclass=BinaryDistribution, )
+    distclass=BinaryDistribution,
+)
