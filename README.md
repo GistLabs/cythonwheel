@@ -7,5 +7,5 @@ How to create Github releases with cython
 ```
     - name: Upload manylinux wheel
         run: |
-          python -m twine upload -u ** your account ** -p SingGPT888@ wheelhouse/*
+          python -m twine upload -u ** your account ** -p ** your password **wheelhouse/*
 ```
