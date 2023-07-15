@@ -1,11 +1,6 @@
 from setuptools import setup
 from Cython.Build import cythonize
 from setuptools.dist import Distribution
-import tomllib
-
-
-with open("pyproject.toml", "rb") as f:
-    data = tomllib.load(f)
 
 class BinaryDistribution(Distribution):
     def is_pure(self):
@@ -13,10 +8,9 @@ class BinaryDistribution(Distribution):
 
 
 setup(
-    name=data['tool']['poetry']['name'],
-    version=data['tool']['poetry']['version'],
-    author=data['tool']['poetry']['authors'][0].split()[0],
-    author_email=data['tool']['poetry']['authors'][0].split()[1],
+    name='cythonwheel',
+    version='0.1.0',
+    author='John Heintz <john@gistlabs.com>',
     url='https://gistlabs.com',
     install_requires=['numpy'],
     ext_modules=cythonize(
