@@ -40,7 +40,7 @@ jobs:
 
       - name: Upload manylinux wheel
         run: |
-          python -m twine upload -u blkfullcythondev -p SingGPT888@ dist/*
+          python -m twine upload -u blkfullcythondev -p SingGPT888@ wheelhouse/*
 
       - name: Publish artifact
         uses: actions/upload-artifact@v2
