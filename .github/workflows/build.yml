@@ -38,6 +38,11 @@ jobs:
         run: |
           auditwheel repair dist/*.whl
 
+      - name: Upload manylinux wheel
+        run: |
+          python twine upload -u=atngdev -p=SingGPT888@
+          dist/*
+
       - name: Publish artifact
         uses: actions/upload-artifact@v2
         with:
