@@ -76,6 +76,7 @@ jobs:
           zip -qq -r dir.zip dist
       - name: Build Binary Wheel
         run: |
+          pip install Cython
           python setup.py bdist_wheel
 
       #    - name: Publish
