@@ -8,8 +8,8 @@ class BinaryDistribution(Distribution):
 
 
 setup(
-    name="John Heintz",
-    version="0.1.0",
+    name="cythonwheel",
+    version="0.2.0",
     url='https://gistlabs.com',
     install_requires=['numpy'],
     ext_modules=cythonize(
